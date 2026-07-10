@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-top">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a class="brand" href="#page-top">
+                    <img src="resources/navbar-logo.png" alt="Studio Logo">
+                </a>
+                
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <i class="fas fa-bars"></i> MENU
+                </label>
+                
+                <ul class="nav-links">
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="container">
+                <div class="hero-subtitle">Welcome To Our Studio!</div>
+                <h1 class="hero-title">IT'S NICE TO MEET YOU</h1>
+                <a href="#services" class="btn-primary">TELL ME MORE</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main / Services -->
+    <main id="main">
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>SERVICES</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3>E-Commerce</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="service-item">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3>Responsive Design</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="service-item">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3>Web Security</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio bg-light">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>PORTFOLIO</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="resources/portfolio/01-thumbnail.jpg" alt="Threads">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Threads</h4>
+                            <p class="text-muted">Illustration</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="resources/portfolio/02-thumbnail.jpg" alt="Explore">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Explore</h4>
+                            <p class="text-muted">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="resources/portfolio/03-thumbnail.jpg" alt="Finish">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Finish</h4>
+                            <p class="text-muted">Identity</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="resources/portfolio/04-thumbnail.jpg" alt="Lines">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Lines</h4>
+                            <p class="text-muted">Branding</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="resources/portfolio/05-thumbnail.jpg" alt="Southwest">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Southwest</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="resources/portfolio/06-thumbnail.jpg" alt="Window">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Window</h4>
+                            <p class="text-muted">Photography</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section id="team" class="team">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>OUR AMAZING TEAM</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="resources/team/1.jpg" alt="Kay Garland">
+                        <h4>Kay Garland</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <div class="social-buttons">
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="resources/team/2.jpg" alt="Larry Parker">
+                        <h4>Larry Parker</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <div class="social-buttons">
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="resources/team/3.jpg" alt="Diana Petersen">
+                        <h4>Diana Petersen</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <div class="social-buttons">
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-footer">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients -->
+        <div class="clients py-5 bg-light">
+            <div class="container">
+                <div class="client-grid">
+                    <div class="client-logo">
+                        <img class="img-fluid d-block mx-auto" src="resources/logos/envato.jpg" alt="Envato">
+                    </div>
+                    <div class="client-logo">
+                        <img class="img-fluid d-block mx-auto" src="resources/logos/designmodo.jpg" alt="Designmodo">
+                    </div>
+                    <div class="client-logo">
+                        <img class="img-fluid d-block mx-auto" src="resources/logos/themeforest.jpg" alt="Themeforest">
+                    </div>
+                    <div class="client-logo">
+                        <img class="img-fluid d-block mx-auto" src="resources/logos/creative-market.jpg" alt="Creative Market">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-copyright">
+                    Copyright &copy; Your Website 2020
+                </div>
+                <div class="footer-social">
+                    <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#!">Privacy Policy</a>
+                    <a href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
