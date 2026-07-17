@@ -46,9 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
                             photos.forEach(photo => {
                                 const col = document.createElement("div");
                                 col.className = "col-md-2 photo-card";
+                                const color = photo.url.split('/').pop();
+                                const workingUrl = `https://placehold.co/600x600/${color}/FFF`;
+                                
                                 col.innerHTML = `
                                     <div>
-                                        <img src="${photo.url}" class="img-fluid mb-2" alt="${photo.title}">
+                                        <img src="${workingUrl}" class="img-fluid mb-2" alt="${photo.title}">
                                         <p class="small mb-1"><strong>Photo ${photo.id}</strong></p>
                                         <p class="small text-muted" style="line-height: 1.2;">${photo.title}</p>
                                     </div>
