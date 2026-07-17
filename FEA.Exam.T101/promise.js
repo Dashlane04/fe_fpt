@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     const albumSection = document.createElement("div");
                     albumSection.className = "album-section";
                     
-                    const albumTitle = document.createElement("h4");
+                    const albumTitle = document.createElement("h5");
+                    albumTitle.className = "mb-3 fw-bold";
                     albumTitle.textContent = `Album ${album.id}: ${album.title}`;
                     albumSection.appendChild(albumTitle);
 
@@ -45,14 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
                             photos.forEach(photo => {
                                 const col = document.createElement("div");
                                 col.className = "col-md-2 photo-card";
-                                // Using thumbnailUrl for a better grid view, similar to expected output
                                 col.innerHTML = `
-                                    <div class="card h-100">
-                                        <img src="${photo.thumbnailUrl}" class="card-img-top" alt="${photo.title}">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small mb-0"><strong>Photo ${photo.id}</strong></p>
-                                            <p class="card-text small text-truncate" title="${photo.title}">${photo.title}</p>
-                                        </div>
+                                    <div>
+                                        <img src="${photo.url}" class="img-fluid mb-2" alt="${photo.title}">
+                                        <p class="small mb-1"><strong>Photo ${photo.id}</strong></p>
+                                        <p class="small text-muted" style="line-height: 1.2;">${photo.title}</p>
                                     </div>
                                 `;
                                 photoRow.appendChild(col);
