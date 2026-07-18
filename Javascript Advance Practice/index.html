@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wikipedia Search</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search Wikipedia..." autocomplete="off">
+                <button id="search-btn">Search</button>
+                <div id="suggestions-box" class="suggestions-box hidden"></div>
+            </div>
+            <div id="error-message" class="error-message hidden"></div>
+        </header>
+
+        <main>
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+
+            <!-- Search Results Section -->
+            <section id="results-section" class="results-section">
+                <div id="results-grid" class="results-grid"></div>
+            </section>
+
+            <!-- Article Display Section -->
+            <section id="article-section" class="article-section hidden">
+                <button id="back-btn" class="back-btn">&larr; Back to results</button>
+                <article id="article-content" class="article-content">
+                    <h2 id="article-title"></h2>
+                    <img id="article-image" class="hidden" alt="Article image">
+                    <div id="article-text"></div>
+                    <a id="article-link" href="#" target="_blank" class="read-more hidden">Read full article on Wikipedia</a>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
