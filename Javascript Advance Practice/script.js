@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
             articleImage.classList.add('hidden');
         }
         
-        articleText.innerHTML = page.extract ? page.extract.replace(/\n/g, '<br><br>') : 'No content available.';
+        articleText.innerHTML = page.extract ? page.extract : 'No content available.';
         
         if (page.fullurl) {
             articleLink.href = page.fullurl;
