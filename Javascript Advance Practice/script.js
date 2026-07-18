@@ -208,7 +208,15 @@ document.addEventListener('DOMContentLoaded', () => {
             articleImage.classList.add('hidden');
         }
         
-        articleText.innerHTML = page.extract ? page.extract : 'No content available.';
+        let htmlContent = page.extract || '';
+        if (htmlContent) {
+            // Wikipedia's TextExtracts API strips out the content of References, Tables, etc. 
+            // but leaves the empty headings behind. This regex removes empty headings 
+            // that are immediately followed by another heading or the end of the string.
+            htmlContent = htmlContent.replace(/<h[1-6][^>]*>.*?<\/h[1-6]>\s*(?=<h[1-6])/gi, '');
+            htmlContent = htmlContent.replace(/<h[1-6][^>]*>.*?<\/h[1-6]>\s*$/gi, '');
+        }
+        articleText.innerHTML = htmlContent ? htmlContent : 'No content available.';
         
         if (page.fullurl) {
             articleLink.href = page.fullurl;
